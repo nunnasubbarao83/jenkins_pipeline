@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git clone 'https://github.com/nunnasubbarao83/jenkins_pipeline.git'
+        git branch: 'main', credentialsId: 'nunnasubbarao83', url: 'https://github.com/nunnasubbarao83/jenkins_pipeline.git'
       }
     }
     stage('Building image') {
