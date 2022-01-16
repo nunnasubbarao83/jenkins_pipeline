@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/nunnasubbarao83/jenkins_pipeline.git'
+        git clone 'https://github.com/nunnasubbarao83/jenkins_pipeline.git'
       }
     }
     stage('Building image') {
